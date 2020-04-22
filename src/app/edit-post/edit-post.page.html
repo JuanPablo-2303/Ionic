@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">Editar Campaña</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Titulo</ion-label>
+    <ion-input type="text" [(ngModel)]="post.title" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Detalles</ion-label>
+    <ion-textarea [(ngModel)]="post.details" required></ion-textarea>
+  </ion-item>
+
+  <ion-button
+    class="ion-padding"
+    color="primary"
+    expand="full"
+    (click)="updatePost(post)"
+    >Actualizar</ion-button
+  >
+</ion-content>

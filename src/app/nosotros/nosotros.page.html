@@ -1,0 +1,77 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="assets/images/toulong.jpeg" width="30" height="30" class="d-inline-block align-top" alt="">
+          Toulong
+  </a>
+</nav>
+  </ion-toolbar>
+</ion-header>
+
+  
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Toulong</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="assets/images/toulong.jpeg" class="center" alt="...">
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    
+    <div class="card-body">
+      <H1>Misión</H1>
+      Crear y dar la informacion al municipio de Benito Juarez.
+    </div>
+    
+    <div class="card-body">
+      <H1>Visión</H1>
+      Fomentar el apoyo y solidaridad.
+    </div>
+    <div class="card-body">
+      <H1>Objetivos</H1>
+      Contribuir con los inconvenientes que tienen los ciudados del municipio de benito juarez.
+    </div>
+
+    <div class="card">
+      <h5 class="card-header">Destacados</h5>
+      <div class="card-body">
+        <div class="card" style="width: 18rem;">
+          <img src="assets/images/bache.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Reportes</h5>
+            <p class="card-text">El objetivo es que la spersonas reporten un inconveniente.
+               </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="assets/images/poste.jpg" class="card-img-top" alt="...">
+          <ion-button
+    class="ion-padding"
+    color="danger"
+    expand="center"
+    [routerLink]="['/login']"
+    >Cerrar Sesión</ion-button
+  >
+        </div>
+      </div>
+      
+    </div>
+
+    
+
+  </div>
+ 
+
+  
+</ion-content>
